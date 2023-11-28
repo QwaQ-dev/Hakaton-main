@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background: #f4f4f4;
+}
+
+.header {
+    width: 100vw;
+    height: 60px;
+
+    position: fixed;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: center;
+
+    border-radius: 0px 0px 14px 14px;
+    background: #FFF;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.aqt {
+    margin: 0px 5px;
+    color: #1357D2;
+}
+
+.logo {
+    display: flex;
+}
+
+.lvl {
+    display: flex;
+    flex-wrap: wrap;
+
+    gap: 20px;
+}
+
+.lvl_name {
+    margin: 0px 10px;
+}
+
+.cont {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.task {
+    margin-top: 4vw;
+    width: 37vw;
+    height: 44vw;
+    background: #FFF;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.desc {
+    height: 44%;
+    text-align: left;
+    margin-top: 3vw;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+.line {
+    background: #111;
+    padding: 0.5px 0px;
+}
+
+.dop_info {
+    overflow-y: auto;
+    height: 30%;
+    text-align: left;
+    margin-top: 3vw;
+    padding: 20px;
+}
+
+.task_title_bg {
+    font-size: 20px;
+    background: #DDDDDD;
+    color: #111;
+    margin: 4.8vw 0vw 0vw 0vw;
+    position: absolute;
+    width: 37vw;
+    height: 33px;
+}
+
+.task_title {
+    font-weight: 400;
+    margin: 0vw 0vw 0vw 2vw;
+}
+
+.answer{
+    width: 56vw;
+    height: 37vw;
+    display: block;
+    padding: 10px;
+
+    margin: 4vw 0px 0px 20px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    border-radius: 14px;
+
+    background: #FFF;
+}
+
+.answer_inp {
+    padding: 5px;
+    width: 99%;
+    height: 34vw;
+    vertical-align: top;
+    overflow: auto;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: left;
+    font-family: "Fira Mono", Consolas, Monaco, "Andale Mono", "Ubuntu Mono", monospace;
+    font-size: 16px;
+    
+    border-radius: 12px;
+    
+    resize: none;
+    outline: none;
+}
+
+.btn_answer {
+    margin: 5px 7px 0px 48vw;
+    width: 118px;
+    height: 34px;
+
+    border-style: none;
+
+    border-radius: 14px;
+
+    background: #1357D2;
+    color: #fff;
+}
+
+.btn_answer:hover {
+    background: #a4a4a4;
+}
+
+textarea:focus {
+    outline: none;
+}
