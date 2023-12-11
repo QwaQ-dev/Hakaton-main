@@ -16,12 +16,7 @@
                 <div class="countdown-container">
                     <h1 class="start">До начала:</h1>
                     <div id="countdown"></div>
-                    
-                    <div class="a">
-                        <a href="https://a20622.webask.io/m88kamfd7" class="link-a">Зарегистрироваться</a>
-                    </div>
-
-                    <!-- <button id="startButton">Начать</button> -->
+                    <button id="startButton">Начать</button>
                 </div>
             </div>
         </div>
@@ -35,7 +30,7 @@
             </div>
         </div>
         <div class="instr">
-            <h1 class="instr-text">ошаговая Инструкция:</h1>
+            <h1 class="instr-text">Пошаговая Инструкция:</h1>
         </div>
         <div class="block_with_gifs">
             <div class="first_block">
