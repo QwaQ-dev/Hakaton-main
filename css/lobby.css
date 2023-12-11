@@ -138,8 +138,8 @@ body {
 
 
 .gifs {
-    margin-top: 10vh;
-    width: 15vw;
+    margin-top: 15vh;
+    width: 10vw;
     height: 15vw;
     flex-shrink: 0;
 }
@@ -192,7 +192,7 @@ body {
 .mail-text {
     color: #6100FF;
     text-align: center;
-    font-family: Montserrat;
+    font-family: ascii;
     font-size: 2vw;
     margin-bottom: 5vh;
 }
@@ -206,7 +206,7 @@ body {
 .a-style {
     text-decoration: none;
     text-align: center;
-    font-family: Montserrat;
+    font-family: ascii;
     font-size: 2vw;
     font-style: normal;
     font-weight: 700;
@@ -222,7 +222,7 @@ body {
 .phone {
     color: #6100FF;
     text-align: center;
-    font-family: Montserrat;
+    font-family: ascii;
     font-size: 2vw;
 }
 
@@ -231,7 +231,7 @@ body {
     font-size: 2vw;
     text-decoration: none;
     text-align: center;
-    font-family: Montserrat;
+    font-family: ascii;
     font-style: normal;
     font-weight: 700;
     line-height: 120%;
@@ -244,7 +244,7 @@ body {
 .part {
     color: #6100FF;
     text-align: center;
-    font-family: Montserrat;
+    font-family: ascii;
     font-size: 2vw;
 }
 
@@ -258,7 +258,7 @@ body {
     position: relative;
     z-index: 1;
     background: #171E27;
-    height: 60vh;
+    height: auto;
 }
 
 .partners-a {
@@ -297,7 +297,8 @@ body {
 }
 
 .footer-block-text {
-    margin: 15px;
+    margin: 5vh 0vw;
+    text-decoration: none;
     color: #625873;
     font-family: Montserrat;
     font-size: 1vw;
@@ -469,7 +470,7 @@ body {
     }
 
     .footer {
-        height: 30vh;
+        height: 50vh;
     }
 
     .asd {
@@ -477,11 +478,12 @@ body {
     }
 
     .gifs {
-        width: 15vw;
+        width: 12vw;
         height: 25vh;
     }
 
     .main {
+        width: 97vw;
         height: 300vh;
     }
 
@@ -511,6 +513,11 @@ body {
     }
 
     .math {
+        width: 99vw;
         height: 320vh;
+    }
+
+    .logo-img {
+        margin: 8vh 8vw;
     }
 }

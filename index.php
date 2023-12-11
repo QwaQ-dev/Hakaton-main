@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/font.css">
-    <link rel="stylesheet" href="../css/lobby.css?v.09">
+    <link rel="stylesheet" href="../css/lobby.css?v.10">
     <title>Lobby</title>
 </head>
 <body>
@@ -15,7 +15,7 @@
                
                 <div class="countdown-container">
                     <h1 class="start">До начала:</h1>
-                    <div id="countdown" ></div>
+                    <div id="countdown"></div>
                     
                     <div class="a">
                         <a href="https://a20622.webask.io/m88kamfd7" class="link-a">Зарегистрироваться</a>
@@ -80,29 +80,7 @@
         </div>
     </div>
     
-    <div class="footer">
-        <div class="footer-logo">
-            <div>
-                <img src="../img/Hackathon_logo.png" alt="" class="fot-logo">
-                <p class="footer-text">Проект создан АВПК работниками IT-отдела в целях повышения образовансти IT сфере среди студентов Актюбинской области. </p>
-            </div>
-            <div class="asd">
-                <div class="footer-block">
-                    <div>
-                        <h2 class="block-name">dadstudio</h2>
-                    </div>
-                    <div class="footer-display">
-                        <p class="footer-block-text">Email</p>
-                        <p class="footer-block-text">Inst</p>
-                        <p class="footer-block-text">FaceBook</p>
-                        <p class="footer-block-text">Call Number</p>
-                        <p class="footer-block-text">FAQ</p>
-                    </div>
-                </div>
-                
-            </div>
-        </div>
-    </div>
+    
 
     <script src="html/timer.js"></script>
     <script src="html/chaotickEffect.js"></script>
