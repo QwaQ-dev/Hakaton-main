@@ -367,6 +367,11 @@ body {
 }
 
 @media screen and (min-width: 540px) {
+
+    .main-info {
+        min-height: 60vh;
+    }
+    
     .asd {
         margin-left: 20vw;
     }
@@ -378,6 +383,10 @@ body {
 }
 
 @media screen and (min-width: 720px) {
+    .main-info {
+        min-height: 60vh;
+    }
+
     .asd {
         margin-left: 25vw;
     }
@@ -439,6 +448,10 @@ body {
 }
 
 @media screen and (min-width: 950px) {
+    .main-info {
+        min-height: 60vh;
+    }
+
     .footer-block {
         margin-left: 30vw;
     }
