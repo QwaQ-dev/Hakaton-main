@@ -336,6 +336,10 @@ body {
         font-size: 2vw;
     }
 
+    #startButton {
+        margin-top: 2vh;
+    }
+
     .text_about {
         font-size: 2vw;
     }
@@ -375,10 +379,6 @@ body {
         flex-shrink: 0;
     }
 
-    #startButton {
-        display: none;
-    }
-
     .block_text {
         margin-top: 6vh;
     }
@@ -402,6 +402,7 @@ body {
     }
 
     .math {
+        width: 100vw;
         height: 200vh;
     }
 
@@ -433,7 +434,7 @@ body {
     }
     
     .math {
-        width: 99.9vw;
+        width: 100vw;
         height: 210vh;
     }
 
@@ -522,7 +523,7 @@ body {
     }
 
     .main-info {
-        height: 70vh;
+        height: 80vh;
     }
 
     .footer-block {
@@ -559,8 +560,6 @@ body {
     .asd {
         margin-left: 0;
     }
-
-    
 
     .gifs {
         margin-top: 5vh;
