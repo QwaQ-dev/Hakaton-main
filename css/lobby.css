@@ -35,6 +35,10 @@ body {
     font-size: 1.5vw;
 }
 
+.display_cont {
+    margin-top: 15vh;
+}
+
 .a {
     text-decoration: none;
     text-align: center;
@@ -328,6 +332,30 @@ body {
 }
 
 @media screen and (min-width: 300px) {
+    .gif_text {
+        font-size: 2vw;
+    }
+
+    .text_about {
+        font-size: 2vw;
+    }
+
+    .number {
+        margin-top: 5vh;
+    }
+
+    .mail-text {
+        margin-bottom: 5vh;
+    }
+
+    .partners {
+        margin-top: 5vh;
+    }
+
+    .reg {
+        margin-top: 5vh;
+    }
+
     .instr {
         margin: 10vh 0 0 0;
     }
@@ -374,7 +402,7 @@ body {
     }
 
     .math {
-        height: 220vh;
+        height: 210vh;
     }
 
     .second_block {
@@ -384,7 +412,13 @@ body {
 
 @media screen and (min-width: 540px) {
 
-    
+    .partners {
+        margin-top: 5vh;
+    }
+
+    .reg {
+        margin-top: 5vh;
+    }
 
     .display_cont {
         margin-top: 10vh;
@@ -400,7 +434,7 @@ body {
     
     .math {
         width: 99.9vw;
-        height: 230vh;
+        height: 210vh;
     }
 
     .gifs {
@@ -411,16 +445,25 @@ body {
 }
 
 @media screen and (min-width: 720px) {
-    .display_cont {
-        margin-top: 10vh;
-    }
-
-    .main-info {
-        height: 60vh;
-    }
 
     .asd {
         margin-left: 25vw;
+    }
+
+    .number {
+        margin-top: 10vh;
+    }
+
+    .mail-text {
+        margin-bottom: 10vh;
+    }
+
+    .partners {
+        margin-top: 10vh;
+    }
+
+    .reg {
+        margin-top: 10vh;
     }
     
     .logo-img {
@@ -468,7 +511,7 @@ body {
     }
 
     .math {
-        height: 250vh;
+        height: 230vh;
     }
 
     .second_block {
@@ -477,6 +520,7 @@ body {
 }
 
 @media screen and (min-width: 950px) {
+
     .display_cont {
         margin-top: 10vh;
     }
@@ -546,8 +590,20 @@ body {
 }
 
 @media screen and (min-width: 1200px) {
+    .display_cont {
+        margin-top: 15vh;
+    }
+
     .main-info {
         height: 100vh;
+    }
+
+    #startButton {
+        display: contents;
+    }
+
+    .second_block {
+        margin-left: 48vw;
     }
     
     .footer-block {
@@ -560,7 +616,7 @@ body {
     }
 
     .math {
-        height: 250vh;
+        height: 280vh;
         width: 99.9vw;
     }
 }
