@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/font.css">
-    <link rel="stylesheet" href="../css/lobby.css?v.10">
+    <link rel="stylesheet" href="../css/lobby.css?v.11">
     <title>Lobby</title>
 </head>
 <body>
@@ -30,7 +30,7 @@
             </div>
         </div>
         <div class="instr">
-            <h1 class="instr-text">ошаговая Инструкция:</h1>
+            <h1 class="instr-text">Пошаговая Инструкция:</h1>
         </div>
         <div class="block_with_gifs">
             <div class="first_block">
@@ -63,7 +63,7 @@
             <div class="mail">
                 <div class="mail-block">
                     <h2 class="mail-text">E-MAIL</h2>
-                    <a href="#" class="a-style">hackathon_aqtobe@mail.ru</a>
+                    <a href="gmail.com" class="a-style">hackathon_aqtobe@mail.ru</a>
                 </div>
             </div>
             <div class="number">
@@ -71,6 +71,9 @@
                     <h2 class="phone">НОМЕР ТЕЛЕФОНА</h2>
                     <p class="phone-number">+7 (705) 671 13 60</p>
                 </div>
+            </div>
+            <div class="reg">
+                <a href="https://a20622.webask.io/m88kamfd7" class="registr">РЕГИСТРАЦИЯ</a>
             </div>
         </div>
     </div>
