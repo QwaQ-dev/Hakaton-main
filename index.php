@@ -30,7 +30,7 @@
             </div>
         </div>
         <div class="instr">
-            <h1 class="instr-text">Пошаговая Инструкция:</h1>
+            <h1 class="instr-text">ошаговая Инструкция:</h1>
         </div>
         <div class="block_with_gifs">
             <div class="first_block">
