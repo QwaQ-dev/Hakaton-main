@@ -480,10 +480,6 @@ body {
         flex-shrink: 0;
     }
 
-    #startButton {
-        display: none;
-    }
-
     .block_text {
         margin-top: 0vh;
     }
@@ -547,9 +543,6 @@ body {
         flex-shrink: 0;
     }
 
-    #startButton {
-        display: none;
-    }
 
     .display_cont {
         margin-top: 20vh;
@@ -596,10 +589,6 @@ body {
 
     .main-info {
         height: 100vh;
-    }
-
-    #startButton {
-        display: contents;
     }
 
     .second_block {
