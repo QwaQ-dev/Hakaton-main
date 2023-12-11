@@ -8,6 +8,19 @@ body {
     background: #f4f4f4;
 }
 
+.user_frame {
+    margin: 0vw 10vw;
+}
+
+.logo {
+    display: flex;
+}
+
+.aqt {
+    margin: 0px 5px;
+    color: #1357D2;
+}
+
 .header {
     width: 100vw;
     height: 60px;
@@ -30,6 +43,12 @@ body {
     padding: 100px 50px;
 }
 
+.send_answer {
+    overflow-wrap: break-word;
+    padding: 10px 15px;
+    font-size: 16px;
+}
+
 .task {
     padding: 10px 26px 13px 26px;
     font-weight: 700;
@@ -47,19 +66,19 @@ body {
 
 .task_title {
     padding: 10px 0px 0px 10px;
-    width: auto;
+    overflow-wrap: break-word;
     font-size: 20px;
 }
 
 .lvl {
-    width: auto;
+    overflow-wrap: break-word;
 
     padding: 10px 15px;
     font-size: 16px;
 }   
 
 .answer {
-    width: auto;
+    overflow-wrap: break-word;
 
     padding: 10px 15px 20px 15px;
     font-size: 16px;

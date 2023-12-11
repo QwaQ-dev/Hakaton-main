@@ -1,6 +1,8 @@
 <?php
 require_once "../databaseconnect.php";
-session_start();
+session_start([
+    'cookie_lifetime' => 86400,
+]);
 
 // Проверка наличия сессии (авторизации) и роли админа
 if (!isset($_SESSION['user']) || $_SESSION['user']['Role'] !== 'admin') {
@@ -30,7 +32,7 @@ mysqli_close($conn);
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/adm.css?v.02">
+    <link rel="stylesheet" href="../css/adm.css?v.03">
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <title>Admin Panel</title>
 </head>
@@ -38,7 +40,7 @@ mysqli_close($conn);
     <div class="header">
         <div class="logo">
             <p class="logo_title">
-                Hackaton Aqtobe
+                Hackaton <p class="aqt">Aqtobe</p>
             </p>
         </div>
         <div class="user_frame">
@@ -67,38 +69,44 @@ mysqli_close($conn);
         </div>
     </div>
     <script>
-    $(document).ready(function () {
-    $("#users").change(function () {
-        var userID = $(this).val();
+$(document).ready(function() {
+    $('#users').change(function() {
+        var userId = $(this).val();
+
+        // Отправка асинхронного запроса на сервер для получения данных по выбранному пользователю
         $.ajax({
-            url: 'get_user_info.php',
-            method: 'post',
-            data: {userID: userID},
-            dataType: 'json',
-            success: function (response) {
-                $("#username").text(response.username);
-
-                var difficultyList = response.difficultyList.split(',');
-                var taskDescriptionList = response.taskDescriptionList.split(',');
-                var answerList = response.answerList.split(',');
-
-                // Очищаем предыдущие данные
-                $(".task_card").remove();
-
-                // Выводим новые данные
-                for (var i = 0; i < difficultyList.length; i++) {
-                    $(".cont").append('<div class="task_card">' +
-                        '<h1 class="task_title">' + response.username + '</h1>' +
-                        '<p class="lvl" id="lvl">Уровень: ' + difficultyList[i] + '</p>' +
-                        '<p class="answer" id="answer">Задание: ' + taskDescriptionList[i] + '</p>' +
-                        '<p class="send_answer" id="send_answer">Ответ: ' + answerList[i] + '</p>' +
-                        '</div>');
-                }
+            url: 'get_user_answers.php',
+            method: 'POST',
+            data: {userId: userId},
+            success: function(response) {
+                // Обработка ответа от сервера
+                var data = JSON.parse(response);
+                displayUserAnswers(data);
+            },
+            error: function(error) {
+                console.log('Ошибка при получении данных: ', error);
             }
         });
     });
-});
 
-    </script>
+    function displayUserAnswers(data) {
+        // Очищаем существующие карточки задач
+        $('.task_card').remove();
+
+        // Создаем новые карточки на основе данных
+        for (var i = 0; i < data.length; i++) {
+            var taskCard = $('<div class="task_card">' +
+                '<h1 class="task_title">' + data[i].UserName + '</h1>' +
+                '<p class="lvl">Задание: ' + data[i].TaskTitle + '</p>' +
+                '<p class="answer">Описание задания: ' + data[i].TaskDescription + '</p>' +
+                '<p class="send_answer">Ответ: ' + data[i].UserAnswer + '</p>' +
+                '</div>');
+            
+            // Добавляем карточку к контейнеру
+            $('.cont').append(taskCard);
+        }
+    }
+});
+</script>
 </body>
 </html>

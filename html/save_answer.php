@@ -3,25 +3,44 @@ require_once "../databaseconnect.php";
 session_start();
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $selectedID = isset($_POST['selectedID']) ? $_POST['selectedID'] : '';
-    $answerText = isset($_POST['answerText']) ? $_POST['answerText'] : '';
-    $userID = isset($_POST['userID']) ? $_POST['userID'] : '';
+    // Проверка существования пользователя в сессии
+    if (!isset($_SESSION['user']) || $_SESSION['user']['Role'] !== 'admin') {
+        header("Location: ../index.php"); // Перенаправление на страницу авторизации, если нет сессии или роль не администратор
+        exit();
+    }
 
-    // Здесь вы можете выполнить вставку данных в вашу таблицу completedtasks
-    // Используйте подготовленные запросы для безопасности
+    // Получение данных из формы
+    $selectedID = $_POST["selectedID"];
+    $answerText = $_POST["answer"];
 
-    // Пример:
-    // $sql = "INSERT INTO completedtasks (TaskID, Answer, UserID) VALUES (?, ?, ?)";
-    // $stmt = $conn->prepare($sql);
-    // $stmt->bind_param("iss", $selectedID, $answerText, $userID);
-    // $stmt->execute();
+    // Получение id пользователя из сессии
+    $userID = isset($_SESSION['user']['ID']) ? $_SESSION['user']['ID'] : '';
 
-    // Дополнительные действия или проверки могут быть добавлены по необходимости
+    // Предотвращение SQL-инъекций
+    $answerText = mysqli_real_escape_string($conn, $answerText);
 
-    echo "Данные успешно сохранены в базе данных.";
-} else {
-    echo "Неверный метод запроса.";
+    // Вставка данных в таблицу completedtasks
+    $sql = "INSERT INTO completedtasks (UserID, TaskID, Answer) VALUES (?, ?, ?)";
+    $stmt = mysqli_prepare($conn, $sql);
+
+    if ($stmt) {
+        // Привязка параметров
+        mysqli_stmt_bind_param($stmt, "iis", $userID, $selectedID, $answerText);
+
+        // Выполнение запроса
+        if (mysqli_stmt_execute($stmt)) {
+            echo "Ответ успешно отправлен!";
+        } else {
+            echo "Ошибка при отправке ответа. " . mysqli_error($conn);
+        }
+
+        // Закрытие подготовленного запроса
+        mysqli_stmt_close($stmt);
+    } else {
+        echo "Ошибка при подготовке запроса. " . mysqli_error($conn);
+    }
+    
+    // Закрытие соединения с базой данных
+    mysqli_close($conn);
 }
-
-mysqli_close($conn);
 ?>

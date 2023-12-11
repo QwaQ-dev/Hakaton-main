@@ -41,15 +41,15 @@ answerButton.addEventListener("click", function () {
     answerText = document.querySelector(".answer_inp").value;
 
     if (answerText == '') {
-        alert("необходимо пососать");
+        alert("необходимо ввести текст");
     } else if (typeof taskID == 'undefined') {
-        alert("необходимо пососать");
+        alert("необходимо выбрать задание");
     } else {
         // Отправляем данные на сервер
         sendAnswer(taskID, answerText, difficulty);
 
         document.querySelector(".answer_inp").value = '';
 
-        alert("отправл");
+        alert("отправлено!");
     }
 });

@@ -1,73 +1,110 @@
-<?php
-require_once "./databaseconnect.php";
-session_start();
-
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $username = $_POST["Username"];
-    $password = $_POST["Password"];
-
-    // Запрос к базе данных для проверки пользователя
-    $sql = "SELECT * FROM users WHERE Username = '$username' AND Password = '$password'";
-    $result = mysqli_query($conn, $sql);
-    if ($result && mysqli_num_rows($result) > 0) {
-        $user = mysqli_fetch_assoc($result);
-        // Сохранение информации о пользователе в сессии
-        $_SESSION['user'] = $user;
-
-        // Проверка роли пользователя
-        if ($user["Role"] == "admin") {
-            header("Location: html/adm.php?id={$user['ID']}"); // Перенаправление на админ-панель с ID пользователя
-            exit();
-        } else {
-            header("Location: html/index.php?username=$username&id={$user['ID']}"); // Перенаправление на главную страницу с именем пользователя и ID
-            exit();
-        }
-    } else {
-        echo '<script>alert("Неверное имя пользователя или пароль.");</script>';
-    }
-}
-
-mysqli_close($conn);
-?>
-
-
-
-
-
-
-
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/reg.css?v.01">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,600;
-    1,700&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,800;1,800&display=swap" rel="stylesheet">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <title>Reg</title>
+    <link rel="stylesheet" href="../css/font.css">
+    <link rel="stylesheet" href="../css/lobby.css?v.09">
+    <title>Lobby</title>
 </head>
 <body>
     <div class="container">
-    <form action="" method="post">
-            
-            <h1>Вход</h1>
-            
-            <div class="input-box">
-                <input type="text" placeholder="Name" id="username" name="Username">
-                <i class='bx bx-user'></i>
-            </div>
+        <div class="main-info">
+            <img src="../img/Hackathon_logo.png" alt="logo" class="logo-img"> 
+            <div class="display_cont">
+               
+                <div class="countdown-container">
+                    <h1 class="start">До начала:</h1>
+                    <div id="countdown" ></div>
+                    
+                    <div class="a">
+                        <a href="https://a20622.webask.io/m88kamfd7" class="link-a">Зарегистрироваться</a>
+                    </div>
 
-            <div class="input-box">
-                <input type="password" placeholder="Password" id="password" name="Password">
-                <i class='bx bxs-lock-alt'></i>
+                    <!-- <button id="startButton">Начать</button> -->
+                </div>
             </div>
-
-            <button class="btn" type="submit">Login</button>
-        </form>
+        </div>
+        <img src="../img/sad.png" alt="" class="math">
+        <div class="text_display">
+            <div class="text_block">
+                <h1 class="about">О мероприятии:</h1>
+                <p class="text_about">Привет, уважаемые кодеры и программисты нашего колледжа! <br>Мы рады пригласить вас на самое захватывающее событие в мире программирования - хакатон 2023 ! ! ! </p>
+                <p class="text_about">Вы можете показать себя как талантливый программист на языке Python, что в дальнейшем откроет для вас двери к новым возможностям и развитии в сфере прогроммирования!</p>
+                <p class="text_about">Уникальные задачи и вызовы: Мы подготовили для вас увлекательные задачи, от лёгких до самых сложных!</p>    
+            </div>
+        </div>
+        <div class="instr">
+            <h1 class="instr-text">Пошаговая Инструкция:</h1>
+        </div>
+        <div class="block_with_gifs">
+            <div class="first_block">
+                <img src="../img/1.gif" alt="gif" class="gifs">
+                <div class="block_text">
+                    <p class="gif_text" onmouseover="animateText()">1. Отсканируй QR-код!</p>
+                    <p class="gif_text" onmouseover="animateText()">2. Заполни форму регистрации!</p>
+                    <p class="gif_text" onmouseover="animateText()">3. Оставь свои контакты!</p>
+                </div>
+            </div>
+            <div class="second_block">
+                <div class="block_text">
+                    <p class="gif_text" onmouseover="animateText()">1. Пригласи друзей!</p>
+                    <p class="gif_text" onmouseover="animateText()">2. Подготовься к Хакатону!</p>
+                    <p class="gif_text" onmouseover="animateText()">3. Следи за новостями!</p>
+                </div>
+                <img src="../img/2.gif" alt="gif" class="gifs">
+            </div>
+            <div class="third_block">
+                <img src="../img/3.gif" alt="gif" class="gifs">
+                <div class="block_text">
+                    <p class="gif_text" onmouseover="animateText()">1. Приходи в назначеное место и время!</p>
+                    <p class="gif_text" onmouseover="animateText()">2. Выполняй задания!</p>
+                    <p class="gif_text" onmouseover="animateText()">3. Выигрывай!</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="info">
+            <div class="mail">
+                <div class="mail-block">
+                    <h2 class="mail-text">E-MAIL</h2>
+                    <a href="#" class="a-style">hackathon_aqtobe@mail.ru</a>
+                </div>
+            </div>
+            <div class="number">
+                <div class="number-block">
+                    <h2 class="phone">НОМЕР ТЕЛЕФОНА</h2>
+                    <p class="phone-number">+7 (705) 671 13 60</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="footer">
+        <div class="footer-logo">
+            <div>
+                <img src="../img/Hackathon_logo.png" alt="" class="fot-logo">
+                <p class="footer-text">Проект создан АВПК работниками IT-отдела в целях повышения образовансти IT сфере среди студентов Актюбинской области. </p>
+            </div>
+            <div class="asd">
+                <div class="footer-block">
+                    <div>
+                        <h2 class="block-name">dadstudio</h2>
+                    </div>
+                    <div class="footer-display">
+                        <p class="footer-block-text">Email</p>
+                        <p class="footer-block-text">Inst</p>
+                        <p class="footer-block-text">FaceBook</p>
+                        <p class="footer-block-text">Call Number</p>
+                        <p class="footer-block-text">FAQ</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
     </div>
 
+    <script src="html/timer.js"></script>
+    <script src="html/chaotickEffect.js"></script>
 </body>
 </html>

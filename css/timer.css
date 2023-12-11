@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    background-image: url("../img/тАЙМЕР\ ХАКАТОН.svg");
+    align-items: center;
+    justify-content: center;
+}
+
+.cont {
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+}
+
+
+.timer {
+    width: 100%;
+    font-size: 200px;
+    color: white;
+    font-family: Verdana;
+    font-weight: bold;
+    
+}
+
+button {
+    width: 50px;
+    background: none;
+    border-style: none;
+}
+
+img {
+    width: 50px;
+    
+}
+.btn {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    
+}
+

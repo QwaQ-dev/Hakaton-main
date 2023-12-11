@@ -4,15 +4,21 @@ require_once "../databaseconnect.php";
 if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["userID"])) {
     $userID = $_POST["userID"];
 
-    // Получение информации о пользователе из базы данных
-    $sqlUserInfo = "SELECT users.Username, GROUP_CONCAT(completedtasks.DifficultyID ORDER BY completedtasks.DifficultyID) AS difficultyList, 
-                    GROUP_CONCAT(tasks.Description ORDER BY completedtasks.DifficultyID) AS taskDescriptionList, 
-                    GROUP_CONCAT(completedtasks.Answer ORDER BY completedtasks.DifficultyID) AS answerList
-                    FROM users
-                    INNER JOIN completedtasks ON users.ID = completedtasks.UserID
-                    INNER JOIN tasks ON completedtasks.TaskID = tasks.ID
-                    WHERE users.ID = '$userID'
-                    GROUP BY users.ID";
+    $sqlUserInfo = "SELECT 
+        u.Username, 
+        GROUP_CONCAT(ct.DifficultyID ORDER BY ct.ID) AS difficultyList, 
+        GROUP_CONCAT(t.Description ORDER BY ct.ID) AS taskDescriptionList, 
+        GROUP_CONCAT(ct.Answer ORDER BY ct.ID) AS answerList
+    FROM 
+        users u
+    INNER JOIN 
+        completedtasks ct ON u.ID = ct.UserID
+    INNER JOIN 
+        tasks t ON ct.TaskID = t.ID
+    WHERE 
+        u.ID = '$userID'
+    GROUP BY 
+        u.ID";
 
     $resultUserInfo = mysqli_query($conn, $sqlUserInfo);
 

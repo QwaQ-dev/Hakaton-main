@@ -1,6 +1,9 @@
 <?php
 require_once "../databaseconnect.php";
-session_start();
+session_start([
+    'cookie_lifetime' => 86400,
+]);
+
 
 // Проверка наличия сессии (авторизации)
 if (!isset($_SESSION['user'])) {
@@ -19,7 +22,7 @@ $username = $user['Username'];
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/style.css?v3">
     <title>Main</title>
 
     <?php
@@ -33,9 +36,7 @@ $username = $user['Username'];
 <body>
     <div class="header">
         <div class="logo">
-            <p class="logo_title">
-                Hackaton <p class="aqt">Aqtobe</p>
-            </p>
+            <img src="../img/Hackathon_logo.png" alt="">
         </div>
         <div class="lvl">
             <p class="lvl_title">
@@ -58,27 +59,30 @@ $username = $user['Username'];
     </select>
         </div>
     <div class="user">
-        <p class="user_id" id="username"><?php echo $username; ?></p>
+        <p class="user_id" id="username"><?php echo $username;?></p>
     </div>
     </div>
     <div class="cont">
-        <div class="task_title_bg">
-            <p class="task_title"> </p>
+        <div class="ttask">
+            <div class="task">
+                <p class="task_title">ERROR </br> </br> Задание не выбрано :(</p>
+                <p class="desc"> </p>
+                <p class="dop_info"> </p>
+            </div>
         </div>
-        <div class="task">
-            <p class="desc"> </p>
-            <p class="line"></p>
-            <p class="dop_info"> </p>
-         </div>
-        <div class="answer">
-            <textarea class="answer_inp"></textarea>
-            <button class="btn_answer">Отправить</button>
+        <div class="aanswer">
+            <div class="answer">
+                <textarea class="answer_inp"></textarea>
+                <div class="bbtn">
+                    <button class="btn_answer">Отправить</button>
+                </div>
+            </div>
         </div>
     </div>
 
     <script src="script.js"></script>
     <script src="get_task_info.js"></script>
     <script src="send_answer.js"></script>
-    
+    <script src="theme.js"></script>
 </body>
 </html>
