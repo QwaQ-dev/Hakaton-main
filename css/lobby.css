@@ -336,7 +336,7 @@ body {
     }
 
     .gif_text {
-        font-size: 2vw;
+        font-size: 3vw;
     }
 
     #startButton {
@@ -344,7 +344,7 @@ body {
     }
 
     .text_about {
-        font-size: 2vw;
+        font-size: 3vw;
     }
 
     .number {
@@ -406,11 +406,17 @@ body {
 
     .math {
         width: 100vw;
-        height: 200vh;
+        height: 230vh;
     }
 
     .second_block {
         margin-left: 35vw;
+    }
+}
+
+@media screen and (min-width: 430px) {
+    .math {
+        height: 260vh;
     }
 }
 
@@ -441,7 +447,7 @@ body {
     
     .math {
         width: 100vw;
-        height: 210vh;
+        height: 275vh;
     }
 
     .gifs {
@@ -494,6 +500,10 @@ body {
         margin-top: 0vh;
     }
 
+    .display_cont {
+        margin-top: 5vh;
+    }
+
     .footer {
         height: 30vh;
     }
@@ -517,7 +527,7 @@ body {
     }
 
     .math {
-        height: 230vh;
+        height: 310vh;
     }
 
     .second_block {
@@ -526,6 +536,14 @@ body {
 }
 
 @media screen and (min-width: 950px) {
+    .text_about {
+        font-size: 2vw;
+    }
+
+    .gif_text {
+        font-size: 2vw;
+    }
+
     .main {
         max-width: 1200px;
     }
@@ -558,7 +576,7 @@ body {
 
 
     .display_cont {
-        margin-top: 20vh;
+        margin-top: 10vh;
     }
 
     .block_text {
@@ -585,7 +603,7 @@ body {
     }
 
     .math {
-        height: 270vh;
+        height: 300vh;
     }
 
     .second_block {
