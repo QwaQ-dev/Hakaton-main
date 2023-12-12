@@ -1,8 +1,8 @@
 @font-face {
     font-family: 'ascii';
-    src: url("../fonts/MINECRAFTRUSNEW.OTF") format("OTF");
+    src: url("../fonts/MINECRAFTRUSNEW.OTF") format("opentype");
 
     font-family: 'Gridular';
-    src: url("../fonts/Gridular-Regular.otf") format("OTF");
+    src: url("../fonts/Gridular-Regular.otf") format("opentype");
 }
 
