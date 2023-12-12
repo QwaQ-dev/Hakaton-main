@@ -30,14 +30,14 @@
             </div>
         </div>
         <div class="instr">
-            <h1 class="instr-text">Пошаговая Инструкция:</h1>
+            <h1 class="about">Пошаговая Инструкция:</h1>
         </div>
         <div class="block_with_gifs">
             <div class="first_block">
                 <img src="../img/1.gif" alt="gif" class="gifs">
                 <div class="block_text">
-                    <p class="gif_text" onmouseover="animateText()">1. Отсканируй QR-код!</p>
-                    <p class="gif_text" onmouseover="animateText()">2. Заполни форму регистрации!</p>
+                    <p class="gif_text" onmouseover="animateText()">1. Перейди по ссылке для регистрации! -<a href="https://a20622.webask.io/m88kamfd7" class="registr"> регистрация</a> </p>
+                    <p class="gif_text" onmouseover="animateText()">2. Заполни форму!</p>
                     <p class="gif_text" onmouseover="animateText()">3. Оставь свои контакты!</p>
                 </div>
             </div>
@@ -63,7 +63,7 @@
             <div class="mail">
                 <div class="mail-block">
                     <h2 class="mail-text">E-MAIL</h2>
-                    <a href="gmail.com" class="a-style">hackathon_aqtobe@mail.ru</a>
+                    <a href="https://mail.google.com" class="a-style">hackathon_aqtobe@mail.ru</a>
                 </div>
             </div>
             <div class="number">
@@ -71,9 +71,6 @@
                     <h2 class="phone">НОМЕР ТЕЛЕФОНА</h2>
                     <p class="phone-number">+7 (705) 671 13 60</p>
                 </div>
-            </div>
-            <div class="reg">
-                <a href="https://a20622.webask.io/m88kamfd7" class="registr">РЕГИСТРАЦИЯ</a>
             </div>
         </div>
     </div>

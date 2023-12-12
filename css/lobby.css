@@ -320,7 +320,6 @@ body {
 }
 
 .registr {
-    color: #6100FF;
     text-decoration: none;
     font-family: ascii;
     font-size: 2vw;
@@ -344,7 +343,7 @@ body {
     }
 
     .text_about {
-        font-size: 3vw;
+        font-size: 2vw;
     }
 
     .number {
@@ -635,7 +634,7 @@ body {
 
     .math {
         height: 280vh;
-        width: 99.9vw;
+        width: 98.5vw;
     }
 }
 
