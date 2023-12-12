@@ -172,7 +172,6 @@ body {
 }
 
 .third_block {
-    text-align: center;
     margin-right: 28vw;
     width: 100%;
     display: flex;
@@ -678,6 +677,7 @@ body {
     }
 
     .math {
+        width: 99vw;
         height: 280vh;
     }
 }
