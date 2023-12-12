@@ -1,9 +1,7 @@
 @font-face {
     font-family: 'ascii';
-    src: url("../fonts/MINECRAFTRUSNEW.woff") format("woff");
-}
+    src: url("https://fonts.google.com/specimen/Pixelify+Sans?query=Pixel") format("opentype");
 
-@font-face {
     font-family: 'Gridular';
-    src: url("../fonts/Gridular-Regular.woff") format("woff");
+    src: url("../fonts/Gridular-Regular.otf") format("opentype");
 }
