@@ -1,7 +1,8 @@
 @font-face {
     font-family: 'ascii';
     src: url("../fonts/ascii.otf") format("opentype");
-
+}
+@font-face {
     font-family: 'Gridular';
     src: url("../fonts/Gridular-Regular.otf") format("opentype");
 }
