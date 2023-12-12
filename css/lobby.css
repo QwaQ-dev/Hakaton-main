@@ -6,7 +6,8 @@
 
 body {
     background: #000;
-    font-family: ascii;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Open Sans', sans-serif;   
 }
 
 .start {
@@ -407,7 +408,7 @@ body {
     }
 
     .second_block {
-        margin-left: 30vw;
+        margin-left: 35vw;
     }
 }
 

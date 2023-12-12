@@ -3,14 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/font.css">
+    <link rel="stylesheet" href="../css/font.css?v.2">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,600;1,700&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,800;1,800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/lobby.css?v.12">
     <title>Lobby</title>
 </head>
 <body>
     <div class="container">
         <div class="main-info">
-            <img src="../img/Hackathon_logo.svg" alt="logo" class="logo-img"> 
+            <img src="../img/Hackathon_logo-old.png" alt="logo" class="logo-img"> 
             <div class="display_cont">
                
                 <div class="countdown-container">
