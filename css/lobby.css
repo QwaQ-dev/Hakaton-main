@@ -332,11 +332,23 @@ body {
 }
 
 @media screen and (min-width: 300px) {
+    #countdown {
+        font-size: 15vw;
+    }
+
+    #countdown .seconds {
+        font-size: 10vw;
+    }
+
     .main {
         max-width: 540px;
     }
 
     .gif_text {
+        font-size: 3vw;
+    }
+
+    .a-style {
         font-size: 3vw;
     }
 
@@ -363,6 +375,11 @@ body {
     .partners {
         margin-top: 5vh;
     }
+
+    .phone-number {
+        font-size: 3vw;
+    }
+
 
     .reg {
         margin-top: 5vh;
@@ -439,7 +456,7 @@ body {
     }
 
     .display_cont {
-        margin-top: 10vh;
+        margin-top: 5vh;
     }
 
     .main-info {
@@ -451,7 +468,7 @@ body {
     }
     
     .math {
-        width: 99vw;
+        width: 99.9vw;
         height: 275vh;
     }
 
@@ -506,7 +523,7 @@ body {
     }
 
     .display_cont {
-        margin-top: 5vh;
+        margin-top: 0vh;
     }
 
     .footer {
@@ -532,6 +549,7 @@ body {
     }
 
     .math {
+        width: 99.9vw;
         height: 310vh;
     }
 
@@ -540,8 +558,20 @@ body {
     }
 }
 
-@media screen and (min-width: 950px) {
+@media screen and (min-width: 850px) {
     .text_about {
+        font-size: 2vw;
+    }
+    
+    #countdown {
+        font-size: 10vw;
+    }
+
+    #countdown .seconds {
+        font-size: 5vw;
+    }
+
+    .phone-number {
         font-size: 2vw;
     }
 
@@ -616,7 +646,7 @@ body {
     }
 
     .math {
-        width: 98.9vw;
+        width: 99.9vw;
         height: 280vh;
     }
 
@@ -661,7 +691,7 @@ body {
 
     .math {
         
-        height: 320vh;
+        height: 300vh;
     }
 
     .logo-img {
