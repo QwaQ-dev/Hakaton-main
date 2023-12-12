@@ -343,7 +343,7 @@ body {
     }
 
     .text_about {
-        font-size: 2vw;
+        font-size: 3vw;
     }
 
     .number {
@@ -602,7 +602,7 @@ body {
     }
 
     .math {
-        width: 98vw;
+        width: 98.9vw;
         height: 280vh;
     }
 
@@ -646,6 +646,7 @@ body {
     }
 
     .math {
+        
         height: 320vh;
     }
 
