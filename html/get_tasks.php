@@ -16,7 +16,7 @@ while ($row = mysqli_fetch_assoc($result)) {
     );
 }
 
-mysqli_close($conn);
+// mysqli_close($conn);
 
 header('Content-Type: application/json; charset=utf-8');
 echo json_encode($options);
