@@ -6,8 +6,7 @@
 
 body {
     background: #000;
-    font-family: 'Montserrat', sans-serif;
-    font-family: 'Open Sans', sans-serif;   
+    font-family: ascii;
 }
 
 .start {
@@ -92,7 +91,6 @@ body {
     margin: 0 auto;
     max-width: 1920px;
     position: relative;
-    /* background-image: url(../img/sad.png); */
     background-size: 200vw;
     background-position: center;
     background-repeat: no-repeat;
@@ -333,6 +331,10 @@ body {
 }
 
 @media screen and (min-width: 300px) {
+    .main {
+        max-width: 540px;
+    }
+
     .gif_text {
         font-size: 2vw;
     }
@@ -413,6 +415,9 @@ body {
 }
 
 @media screen and (min-width: 540px) {
+    .main {
+        max-width: 720px;
+    }
 
     .partners {
         margin-top: 5vh;
@@ -447,6 +452,9 @@ body {
 }
 
 @media screen and (min-width: 720px) {
+    .main {
+        max-width: 950px;
+    }
 
     .asd {
         margin-left: 25vw;
@@ -513,11 +521,14 @@ body {
     }
 
     .second_block {
-        margin-left: 35vw;
+        margin-left: 40vw;
     }
 }
 
 @media screen and (min-width: 950px) {
+    .main {
+        max-width: 1200px;
+    }
 
     .display_cont {
         margin-top: 10vh;
