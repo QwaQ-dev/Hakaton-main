@@ -5,7 +5,7 @@ require_once "../databaseconnect.php";
 $id = isset($_GET['id']) ? intval($_GET['id']) : 1;
 
 // Выполняем запрос к базе данных для получения данных по ID
-$sql = "SELECT Title, Description FROM Tasks WHERE ID = $id";
+$sql = "SELECT Title, Description FROM tasks WHERE ID = $id";
 $result = mysqli_query($conn, $sql);
 
 if ($result) {
