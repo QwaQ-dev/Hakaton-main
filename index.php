@@ -10,7 +10,7 @@
 <body>
     <div class="container">
         <div class="main-info">
-            <img src="../img/Hackathon_logo.png" alt="logo" class="logo-img"> 
+            <img src="../img/Hackathon_logo.svg" alt="logo" class="logo-img"> 
             <div class="display_cont">
                
                 <div class="countdown-container">
