@@ -15,10 +15,22 @@ body {
     margin-bottom: 20px;
 }
 
+.logos {
+    display: flex;
+    justify-content: space-between;
+}
+
 .logo-img {
-    margin: 8vh;
+    margin: 8vh 8vw;
     width: 400px;
     height: 90px;
+    flex-shrink: 0;
+}
+
+.ahpc {
+    margin: 4vh 8vw;
+    width: 100px;
+    height: 40px;
     flex-shrink: 0;
 }
 
@@ -89,7 +101,7 @@ body {
 
 .main {
     margin: 0 auto;
-    max-width: 1920px;
+    max-width: 1020px;
     position: relative;
     background-size: 200vw;
     background-position: center;
@@ -130,9 +142,17 @@ body {
 
 .about {
     font-size: 3vw;
-    color: #A7B5FF;
-    text-shadow: 0px 0px 6.61px #EFA7FF, 0px 0px 13.219px #EFA7FF, 0px 0px 46.267px #EFA7FF, 0px 0px 92.534px #2000E3, 0px 0px 158.63px #2000E3, 0px 0px 277.603px #2000E3;
-}
+    color: #f0f0f0;
+    text-shadow:
+    0 0 7px #8212b2,
+    0 0 10px #ed4343,
+    0 0 21px #fff,
+    0 0 42px rgb(234, 0, 255),
+    0 0 72px rgb(255, 0, 132),
+    0 0 82px rgb(255, 0, 132),
+    0 0 92px rgb(153, 0, 255),
+    0 0 101px rgb(217, 0, 255);
+    }
 
 .text_about {
     font-size: 1.5vw;
@@ -165,6 +185,7 @@ body {
 }
 
 .second_block {
+    margin-top: 20vh;
     margin-left: 40vw;
     width: 100%;
     display: flex;
@@ -172,6 +193,7 @@ body {
 }
 
 .third_block {
+    margin-top: 20vh;
     margin-right: 28vw;
     width: 100%;
     display: flex;
@@ -332,15 +354,15 @@ body {
 
 @media screen and (min-width: 300px) {
     .start {
-        font-size: 4vw;
+        font-size: 3vw;
     }
 
     #countdown {
-        font-size: 15vw;
+        font-size: 10vw;
     }
 
     #countdown .seconds {
-        font-size: 10vw;
+        font-size: 7.5vw;
     }
 
     .main {
@@ -385,7 +407,6 @@ body {
         font-size: 3vw;
     }
 
-
     .reg {
         margin-top: 5vh;
     }
@@ -410,7 +431,7 @@ body {
     }
 
     .block_text {
-        margin-top: 6vh;
+        margin-top: 12vh;
     }
 
     .asd {
@@ -418,13 +439,13 @@ body {
     }
 
     .gifs {
-        margin-top: 10vh;
+        margin-top: 17vh;
         width: 20vw;
-        height: 15vh;
+        height: 12vh;
     }
 
     .gif_text {
-        margin: 5vh 0vh 0vh 3vw;
+        margin: 3vh 0vh 0vh 3vw;
     }
 
     .main {
@@ -433,10 +454,19 @@ body {
 
     .math {
         width: 100vw;
-        height: 230vh;
+        height: 240vh;
+    }
+
+    .first_block {
+        margin-right: 10vw;
+    }
+
+    .third_block {
+        margin-top: 10vh;
     }
 
     .second_block {
+        margin-top: 10vh;
         margin-left: 35vw;
     }
 }
@@ -478,7 +508,6 @@ body {
     }
 
     .gifs {
-        margin-top: 10vh;
         width: 20vw;
         height: 15vh;
     }
@@ -513,6 +542,13 @@ body {
         margin: 5vh;
         width: 220px;
         height: 50px;
+        flex-shrink: 0;
+    }
+
+    .ahpc {
+        margin: 5vh 5vw;
+        width: 200px;
+        height: 80px;
         flex-shrink: 0;
     }
 
@@ -585,6 +621,7 @@ body {
     }
 
     .gif_text {
+        line-height: 7vh;
         font-size: 2vw;
     }
 
@@ -683,8 +720,12 @@ body {
     }
 
     .math {
-        width: 98.5vw;
-        height: 280vh;
+        width: 99vw;
+        height: 350vh;
+    }
+
+    .ahpc {
+        margin-bottom: 0vh;
     }
 }
 
