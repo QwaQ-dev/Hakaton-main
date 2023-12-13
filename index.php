@@ -63,7 +63,7 @@
             <div class="mail">
                 <div class="mail-block">
                     <h2 class="mail-text">E-MAIL</h2>
-                    <a href="https://mail.google.com" class="a-style">hackathon_aqtobe@mail.ru</a>
+                    <a href="https://mail.google.com" class="a-style">hackathon@apk-edu.kz</a>
                 </div>
             </div>
             <div class="number">
