@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/font.css?v.3">
     <link rel="stylesheet" href="../css/lobby.css?v.17">
-    <title>Lobby</title>
+    <title>Hackathon</title>
 </head>
 <body>
     <div class="container">

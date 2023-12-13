@@ -546,9 +546,9 @@ body {
     }
 
     .ahpc {
-        margin: 5vh 5vw;
-        width: 200px;
-        height: 80px;
+        margin: 6.3vh 4vw;
+        width: 160px;
+        height: 63px;
         flex-shrink: 0;
     }
 
@@ -705,10 +705,6 @@ body {
     .main-info {
         height: 100vh;
     }
-
-    .second_block {
-        margin-left: 48vw;
-    }
     
     .footer-block {
         margin-left: 40vw;
@@ -720,7 +716,7 @@ body {
     }
 
     .math {
-        width: 99vw;
+        width: 98.9vw;
         height: 350vh;
     }
 
@@ -730,8 +726,6 @@ body {
 }
 
 @media screen and (min-width: 1500px) {
-    
-
     .footer-block {
         margin-left: 50vw;
     }
@@ -739,10 +733,6 @@ body {
     .math {
         
         height: 300vh;
-    }
-
-    .logo-img {
-        margin: 8vh 8vw;
     }
 
     .gifs {
