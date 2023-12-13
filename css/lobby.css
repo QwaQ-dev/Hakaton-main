@@ -36,7 +36,7 @@ body {
 
 .main-info {
     height: 100vh;
-    background-image: url('../img/lobby_bg.jpg');
+    background-image: url('../img/123.jpg');
     background-size: cover; /* Растягивает изображение на весь экран, сохраняя пропорции */
     background-position: center; /* Располагает изображение по центру экрана */
     background-repeat: no-repeat; /* Запрещает повторение изображения */
