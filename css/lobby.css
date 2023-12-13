@@ -331,6 +331,10 @@ body {
 }
 
 @media screen and (min-width: 300px) {
+    .start {
+        font-size: 4vw;
+    }
+
     #countdown {
         font-size: 15vw;
     }
@@ -344,6 +348,7 @@ body {
     }
 
     .gif_text {
+        line-height: 3vh;
         font-size: 3vw;
     }
 
@@ -356,6 +361,7 @@ body {
     }
 
     #startButton {
+        font-size: 3vw;
         margin-top: 2vh;
     }
 
@@ -427,7 +433,7 @@ body {
 
     .math {
         width: 100vw;
-        height: 210vh;
+        height: 230vh;
     }
 
     .second_block {
@@ -437,7 +443,7 @@ body {
 
 @media screen and (min-width: 430px) {
     .math {
-        height: 260vh;
+        height: 270vh;
     }
 }
 
