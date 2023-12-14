@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/font.css?v.3">
-    <link rel="stylesheet" href="../css/lobby.css?v.22">
+    <link rel="stylesheet" href="../css/lobby.css?v.23">
     <link rel="icon" href="../img/forhead.png">
     <title>Hackathon</title>
 </head>
