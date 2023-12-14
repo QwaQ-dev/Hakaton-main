@@ -42,13 +42,22 @@ body {
     background-repeat: no-repeat; /* Запрещает повторение изображения */
 }
 
-h5.subscript {
-    margin-top: 1.5vh;
+.subscript {
+    margin-bottom: 2vh;
+    font-size: 3%;
+    color: #fff;
+    text-shadow:
+      0 0 7px #8212b2,
+      0 0 10px #ed4343,
+      0 0 21px #fff,
+      0 0 42px rgb(234, 0, 255),
+      0 0 72px rgb(255, 0, 132),
+      0 0 82px rgb(255, 0, 132),
+      0 0 92px rgb(153, 0, 255),
+      0 0 101px rgb(217, 0, 255);
+      margin-top: 2vh
 }
 
-.h5 {
-    margin-top: 1.5vh;
-}
 .name {
     margin: 0vw 0vw 0vh 73vw;
     font-size: 1.5vw;
@@ -394,6 +403,10 @@ h5.subscript {
         font-size: 7.5vw;
     }
 
+    .subscript {
+        font-size: 3vw;
+    }
+
     .main {
         max-width: 540px;
     }
@@ -657,6 +670,10 @@ h5.subscript {
         font-size: 2vw;
     }
 
+    .subscript {
+        font-size: 2vw;
+    }
+
     .registr {
         font-size: 2vw;
     }
@@ -714,7 +731,7 @@ h5.subscript {
 
     .math {
         width: 99.9vw;
-        height: 320vh;
+        height: 330vh;
     }
 
     .second_block {
@@ -757,7 +774,7 @@ h5.subscript {
 
     .math {
         width: 98.9vw;
-        height: 350vh;
+        height: 360vh;
     }
 
     .ahpc {
@@ -768,7 +785,7 @@ h5.subscript {
 @media screen and (min-width: 1500px) {
     .math {
         
-        height: 350vh;
+        height: 370vh;
     }
 
     .gifs {
