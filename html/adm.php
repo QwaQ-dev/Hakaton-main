@@ -99,7 +99,7 @@ $(document).ready(function() {
                 '<h1 class="task_title">' + data[i].UserName + '</h1>' +
                 '<p class="lvl">Задание: ' + data[i].TaskTitle + '</p>' +
                 '<p class="answer">Описание задания: ' + data[i].TaskDescription + '</p>' +
-                '<p class="send_answer">Ответ: <br> ' + data[i].UserAnswer.replace(/\n/g, "<br>") + '</p>' +
+                '<span class="send_answer">Ответ: <br> ' + data[i].UserAnswer.replace(/\n/g, "<br>") + '</span>' +
                 '</div>');
             
             // Добавляем карточку к контейнеру
