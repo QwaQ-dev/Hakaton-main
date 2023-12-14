@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/font.css?v.3">
-    <link rel="stylesheet" href="../css/lobby.css?v.17">
+    <link rel="stylesheet" href="../css/lobby.css?v.20">
     <title>Hackathon</title>
 </head>
 <body>
@@ -15,7 +15,7 @@
                 <img src="../img/LogNewWhite.png" alt="" class="ahpc">
             </div>
             <div class="display_cont">
-               
+                
                 <div class="countdown-container">
                     <h1 class="start">До начала:</h1>
                     <div id="countdown"></div>
@@ -30,7 +30,7 @@
                 <p class="text_about">Привет, уважаемые студенты колледжей Актюбинской области! <br>Мы рады пригласить вас на самое захватывающее событие в мире программирования - хакатон 2023 ! ! ! </p>
                 <p class="text_about">Вы можете показать себя как талантливый программист на языке Python, что в дальнейшем откроет для вас двери к новым возможностям и развитии в сфере программирования!</p>
                 <p class="text_about">Уникальные задачи и вызовы: Мы подготовили для вас увлекательные задачи, от лёгких до самых сложных!</p>    
-                <h4 class="subscript">Хакатон проводится только среди студентов колледжей Актюбинской области!</h4>
+                <h4 class="subscript">Хакатон проводится только среди студентов колледжей Актюбинской области!</h4>   
             </div>
         </div>
         <div class="instr">
@@ -80,6 +80,12 @@
     </div>
     
     
+    <div class="footer">
+        <div class="footer-logos">
+            <img src="../img/partner_logo1.png" alt="" class="fot-logo1">
+            <img src="../img/partner_logo2.png" alt="" class="fot-logo">
+        </div>
+    </div>
 
     <script src="html/timer.js"></script>
     <script src="html/chaotickEffect.js"></script>

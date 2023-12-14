@@ -291,7 +291,24 @@ h5.subscript {
     position: relative;
     z-index: 1;
     background: #171E27;
-    height: auto;
+    height: 50vh;
+}
+
+.fot-logo1 {
+    width: 300px;
+    height: 282px;
+}
+
+.fot-logo {
+    width: 400px;
+    height: 92px;
+}
+
+.footer-logos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2vh 2vw;
 }
 
 .partners-a {
@@ -299,42 +316,9 @@ h5.subscript {
     text-align: center;
 }
 
-.footer-logo {
-    width: 40%;
-    display: flex;
-}
-
-.fot-logo {
-    margin: 8vh;
-    width: 400px;
-    height: 90px;
-    flex-shrink: 0;
-}
-
-.footer-text {
-    width: auto;
-    margin-left: 8vw;
-    color: #625873;
-    font-family: Montserrat;
-    font-size: 1vw;
-}
-
-.footer-block {
-    margin-top: 10vh;
-    margin-left: 8vw;
-}
-
 .asd {
     display: flex;
     margin-left: 25vw;
-}
-
-.footer-block-text {
-    margin: 5vh 0vw;
-    text-decoration: none;
-    color: #625873;
-    font-family: Montserrat;
-    font-size: 1vw;
 }
 
 .a:hover {
@@ -362,6 +346,25 @@ h5.subscript {
 @media screen and (min-width: 300px) {
     .start {
         font-size: 3vw;
+    }
+
+    .fot-logo1 {
+        margin: 2vh 2vw;
+        width: 100px;
+        height: 95px;
+    }
+
+    .mail {
+        margin-top: 10vh;
+    }
+    
+    .fot-logo {
+        width: 200px;
+        height: 46px;
+    }
+
+    .footer {
+        height: 20vh;
     }
 
     #countdown {
@@ -489,6 +492,10 @@ h5.subscript {
         max-width: 720px;
     }
 
+    .footer {
+        height: 26vh;
+    }
+
     .partners {
         margin-top: 5vh;
     }
@@ -525,6 +532,24 @@ h5.subscript {
         max-width: 950px;
     }
 
+    .mail {
+        margin-top: 20vh;
+    }
+
+    .fot-logo1 {
+        width: 200px;
+        height: 188px;
+    }
+    
+    .fot-logo {
+        width: 300px;
+        height: 69px;
+    }
+
+    .footer {
+        height: 40vh;
+    }
+
     .asd {
         margin-left: 25vw;
     }
@@ -559,23 +584,12 @@ h5.subscript {
         flex-shrink: 0;
     }
 
-    .fot-logo {
-        margin: 5vh;
-        width: 220px;
-        height: 50px;
-        flex-shrink: 0;
-    }
-
     .block_text {
         margin-top: 0vh;
     }
 
     .display_cont {
         margin-top: 0vh;
-    }
-
-    .footer {
-        height: 30vh;
     }
 
     .asd {
@@ -588,17 +602,13 @@ h5.subscript {
         height: 20vh;
     }
 
-    .footer-block {
-        margin-top: 5vh;
-        margin-left: 10vw;
-    }
     .main {
         height: 300vh;
     }
 
     .math {
         width: 99.9vw;
-        height: 310vh;
+        height: 290vh;
     }
 
     .second_block {
@@ -648,10 +658,6 @@ h5.subscript {
         height: 80vh;
     }
 
-    .footer-block {
-        margin-left: 30vw;
-    }
-
     .logo-img {
         margin: 5vh;
         width: 220px;
@@ -659,24 +665,12 @@ h5.subscript {
         flex-shrink: 0;
     }
 
-    .fot-logo {
-        margin: 5vh;
-        width: 220px;
-        height: 50px;
-        flex-shrink: 0;
-    }
-
-
     .display_cont {
         margin-top: 10vh;
     }
 
     .block_text {
         margin-top: 0vh;
-    }
-
-    .footer {
-        height: 50vh;
     }
 
     .asd {
@@ -696,7 +690,7 @@ h5.subscript {
 
     .math {
         width: 99.9vw;
-        height: 280vh;
+        height: 300vh;
     }
 
     .second_block {
@@ -712,10 +706,6 @@ h5.subscript {
     .main-info {
         height: 100vh;
     }
-    
-    .footer-block {
-        margin-left: 40vw;
-    }
 
     .gifs {
         width: 13vw;
@@ -724,7 +714,7 @@ h5.subscript {
 
     .math {
         width: 98.9vw;
-        height: 350vh;
+        height: 340vh;
     }
 
     .ahpc {
@@ -733,10 +723,6 @@ h5.subscript {
 }
 
 @media screen and (min-width: 1500px) {
-    .footer-block {
-        margin-left: 50vw;
-    }
-
     .math {
         
         height: 300vh;
