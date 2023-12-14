@@ -42,6 +42,9 @@ body {
     background-repeat: no-repeat; /* Запрещает повторение изображения */
 }
 
+.subscript {
+    margin-top: 1.5vh;
+}
 .name {
     margin: 0vw 0vw 0vh 73vw;
     font-size: 1.5vw;
