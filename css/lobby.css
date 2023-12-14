@@ -42,7 +42,7 @@ body {
     background-repeat: no-repeat; /* Запрещает повторение изображения */
 }
 
-.subscript {
+h5.subscript {
     margin-top: 1.5vh;
 }
 .name {
