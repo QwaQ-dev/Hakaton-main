@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/font.css?v.3">
-    <link rel="stylesheet" href="../css/lobby.css?v.20">
+    <link rel="stylesheet" href="../css/lobby.css?v.22">
+    <link rel="icon" href="../img/forhead.png">
     <title>Hackathon</title>
 </head>
 <body>
@@ -12,7 +13,6 @@
         <div class="main-info">
             <div class="logos">
                 <img src="../img/Hackathon_logo-old.png" alt="logo" class="logo-img"> 
-                <img src="../img/LogNewWhite.png" alt="" class="ahpc">
             </div>
             <div class="display_cont">
                 
@@ -76,14 +76,16 @@
                     <p class="phone-number">+7 (705) 671 13 60</p>
                 </div>
             </div>
-        </div>
-    </div>
-    
-    
-    <div class="footer">
-        <div class="footer-logos">
-            <img src="../img/partner_logo1.png" alt="" class="fot-logo1">
-            <img src="../img/partner_logo2.png" alt="" class="fot-logo">
+            <div class="number">
+                <div class="number-block">
+                    <h2 class="phone">ПАРТНЕРЫ</h2>
+                    <div class="part-logo">
+                        <img src="../img/partner_logo1.png" alt="" class="fot-logo1">
+                        <img src="../img/partner_logo2.png" alt="" class="fot-logo">
+                        <img src="../img/LogNewWhite.png" alt="" class="ahpc">
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
