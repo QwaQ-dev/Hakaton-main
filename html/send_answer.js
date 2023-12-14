@@ -38,7 +38,8 @@ answerButton.addEventListener("click", function () {
     }
 
     // Получаем текст ответа
-    answerText = document.querySelector(".answer_inp").value;
+    var answerText = editor.getValue();
+    
 
     if (answerText == '') {
         alert("необходимо ввести текст");

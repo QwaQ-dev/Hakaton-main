@@ -23,7 +23,33 @@ $username = $user['Username'];
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/style.css?v3">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.1/codemirror.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.1/theme/monokai.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.1/addon/hint/show-hint.min.css">
     <title>Main</title>
+
+    <script>
+        var editor;
+        
+        window.onload = function () {
+            editor = CodeMirror.fromTextArea(document.getElementById("code"), {
+                lineNumbers: true,
+                mode: "python",
+                theme: "monokai",
+                extraKeys: {
+                    "Ctrl-Space": function (cm) {
+                        cm.showHint({ hint: CodeMirror.hint.tern });
+                    },
+                },
+                hintOptions: {
+                    tern: {
+                        defs: ["browser", "ecmascript", "python"],
+                        plugins: { python: {} },
+                    },
+                },
+            });
+        };
+    </script>
 
     <?php
     $username = isset($_GET['username']) ? $_GET['username'] : ''; // Получаем имя пользователя из параметра запроса
@@ -72,7 +98,7 @@ $username = $user['Username'];
         </div>
         <div class="aanswer">
             <div class="answer">
-                <textarea class="answer_inp"></textarea>
+                <textarea class="answer_inp" name="code" id="code"></textarea>
                 <div class="bbtn">
                     <button class="btn_answer">Отправить</button>
                 </div>
@@ -83,6 +109,11 @@ $username = $user['Username'];
     <script src="script.js"></script>
     <script src="get_task_info.js"></script>
     <script src="send_answer.js"></script>
-    <script src="theme.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.1/codemirror.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.1/mode/python/python.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.1/addon/hint/show-hint.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/acorn/8.3.0/acorn.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tern/0.23.0/tern.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tern/0.23.0/tern-python.min.js"></script>
 </body>
 </html>
