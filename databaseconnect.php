@@ -1,6 +1,6 @@
 <?php
 $servername = "localhost"; // Адрес сервера MySQL
-$username = "userh"; // Имя пользователя MySQL
+$username = "root"; // Имя пользователя MySQL
 $password = "root"; // Пароль пользователя MySQL
 $dbname = "db_hackaton"; // Имя базы данных
 

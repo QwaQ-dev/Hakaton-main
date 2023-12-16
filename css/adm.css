@@ -6,7 +6,6 @@
 body {
     color: #fff;
     background-image: url(../img/main_bg.png);
-    background-repeat: no-repeat;
     font-family: ascii;
 }
 
@@ -19,6 +18,7 @@ select {
 pre {
     font-family: ascii;
     margin: 15px;
+    
 }
 
 .user_frame {
