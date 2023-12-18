@@ -187,3 +187,48 @@ textarea:focus {
 .lvl_name:focus {
     outline: none;
 }
+
+
+@media screen and (min-width: 600px) {
+    .lvl {
+        display: block;
+    }
+
+    .header {
+        height: 205px;
+    }
+
+    .logo {
+        height: 37%;
+    }
+
+    .lvl_title { 
+        margin: 10px 20px 0px 60px;
+    }
+}
+
+@media screen and (min-width: 1010px) {
+    .lvl {
+        display: flex;
+    }
+
+    .logo {
+        height: 37%;
+        width: auto;
+    }
+
+}
+
+@media screen and (min-width: 1300px) {
+    .header {
+        height: 70px;
+    }
+    
+    .logo {
+        height: 70%;
+    }
+
+    .lvl_title { 
+        margin: 0 20px 0px 60px;
+    } 
+}

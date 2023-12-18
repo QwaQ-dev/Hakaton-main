@@ -22,7 +22,7 @@ $username = $user['Username'];
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/style.css?v3">
+    <link rel="stylesheet" href="../css/style.css?v4">
     <link rel="stylesheet" href="../css/font.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.1/codemirror.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.1/theme/monokai.min.css">
@@ -63,7 +63,7 @@ $username = $user['Username'];
 <body>
     <div class="header">
         <div class="logo">
-            <img src="../img/Hackathon_logo.png" alt="">
+            <img src="../img/Hackathon_logo-old.png" alt="">
         </div>
         <div class="lvl">
             <p class="lvl_title">
