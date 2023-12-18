@@ -33,7 +33,7 @@ mysqli_close($conn);
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/adm.css?v.04">
-    <link rel="stylesheet" href="../css/fonts.css?v.03">
+    <link rel="stylesheet" href="../css/font.css?v.03">
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <title>Admin Panel</title>
 </head>
