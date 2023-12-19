@@ -15,6 +15,7 @@ body {
     width: 96vw;
     height: 70px;
     border-radius: 10px;
+    padding: 10px;
     margin-top: 20px;
     display: flex;
     flex-wrap: wrap;
