@@ -1,4 +1,4 @@
-let countdownDate = new Date("Dec 20, 2023 02:21:00").getTime();
+let countdownDate = new Date("Dec 20, 2023 10:00:00").getTime();
 let countdownElement = document.getElementById("countdown");
 let startButton = document.getElementById("startButton");
 
