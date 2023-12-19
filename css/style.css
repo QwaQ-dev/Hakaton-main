@@ -46,6 +46,7 @@ body {
 }
 
 .lvl_name {
+    width: 160px;
     background: #272727;
     color: #ffffff;
     border: 1px solid #ffffff;
@@ -83,11 +84,13 @@ body {
 }
 
 .desc {
+    width: 500px;
     height: 44%;
     text-align: left;
     padding: 20px;
     overflow-y: auto;
     color: #fff;
+    white-space: pre-wrap;
 }
 
 .line {
@@ -190,20 +193,12 @@ textarea:focus {
 
 
 @media screen and (min-width: 600px) {
-    .lvl {
-        display: block;
-    }
-
-    .header {
-        height: 205px;
-    }
-
     .logo {
         height: 37%;
     }
 
     .lvl_title { 
-        margin: 10px 20px 0px 60px;
+        margin: 0px 20px 0px 60px;
     }
 }
 

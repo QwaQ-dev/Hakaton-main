@@ -773,7 +773,7 @@ body {
     }
 
     .math {
-        width: 98.9vw;
+        width: 98.7vw;
         height: 360vh;
     }
 
@@ -784,7 +784,6 @@ body {
 
 @media screen and (min-width: 1500px) {
     .math {
-        
         height: 370vh;
     }
 
