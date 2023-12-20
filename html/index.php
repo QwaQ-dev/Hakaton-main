@@ -66,13 +66,13 @@ $username = $user['Username'];
             <img src="../img/Hackathon_logo-old.png" alt="">
         </div>
        <div class="lvl">
-            <!-- <p class="lvl_title">
+            <p class="lvl_title">
                 Легкий:
             </p>
             <select class="lvl_name" id="lite">
-            </select> -->
+            </select>
             <p class="lvl_title">
-                2 Уровень:
+                Средний:
             </p>
             <select class="lvl_name" id="normal">
             </select>
