@@ -72,7 +72,7 @@ $username = $user['Username'];
             <select class="lvl_name" id="lite">
             </select> -->
             <p class="lvl_title">
-                Средний:
+                2 Уровень:
             </p>
             <select class="lvl_name" id="normal">
             </select>
