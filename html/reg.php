@@ -8,6 +8,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // Запрос к базе данных для проверки пользователя
     $sql = "SELECT * FROM users WHERE Username = '$username' AND Password = '$password'";
+    // Пацаны, не забываем про sql injection... Поосторожнее с этим
+    // Чтобы сделать запрос в вашем PHP-скрипте более безопасным и предотвратить SQL-инъекции, следует использовать подготовленные выражения (prepared statements) с параметризованными запросами
     $result = mysqli_query($conn, $sql);
     if ($result && mysqli_num_rows($result) > 0) {
         $user = mysqli_fetch_assoc($result);
