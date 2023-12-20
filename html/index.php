@@ -67,17 +67,17 @@ $username = $user['Username'];
         </div>
        <div class="lvl">
             <p class="lvl_title">
-                Легкий:
+                1 Уровень:
             </p>
             <select class="lvl_name" id="lite">
             </select>
             <!-- <p class="lvl_title">
-                Средний:
+                2 Уровень:
             </p>
             <select class="lvl_name" id="normal">
             </select>
             <p class="lvl_title">
-                Сложный:
+                3 Уровень:
             </p>
             <select class="lvl_name" id="hard">
             </select> -->
