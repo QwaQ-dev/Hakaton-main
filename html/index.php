@@ -76,11 +76,11 @@ $username = $user['Username'];
             </p>
             <select class="lvl_name" id="normal">
             </select>
-            <!-- <p class="lvl_title">
+            <p class="lvl_title">
                 Сложный:
             </p>
             <select class="lvl_name" id="hard">
-            </select> -->
+            </select> 
            
         <!-- Опции будут загружены динамически из JavaScript -->
     </select>
