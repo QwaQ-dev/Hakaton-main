@@ -77,7 +77,7 @@ $username = $user['Username'];
             <select class="lvl_name" id="normal">
             </select>
             <p class="lvl_title">
-                Сложный:
+                3 Уровень:
             </p>
             <select class="lvl_name" id="hard">
             </select> 
